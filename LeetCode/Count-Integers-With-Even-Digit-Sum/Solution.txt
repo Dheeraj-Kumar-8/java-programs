@@ -1,0 +1,23 @@
+1class Solution {
+2    public int countEven(int num) {
+3        int count = 0;
+4        for(int i=1;i<=num;i++)
+5        {
+6            int sum = 0;
+7            int temp = i;
+8            while(temp>0)
+9            {
+10                int r  = temp%10;
+11                sum+=r;
+12                temp = temp/10;
+13                
+14            }
+15            if(sum%2==0)
+16            {
+17                count++;
+18            }
+19        }
+20        return count;
+21        
+22    }
+23}
